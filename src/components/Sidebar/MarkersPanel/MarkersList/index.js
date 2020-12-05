@@ -1,30 +1,33 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Table, Button } from 'antd';
+import { EyeOutlined, EyeInvisibleOutlined, DeleteOutlined } from '@ant-design/icons';
+
+const columns = [
+  {
+    title: 'Visibility',
+    dataIndex: 'visible',
+    key: 'visibility',
+    render: (text, record) => <Button icon={record.visible ? <EyeOutlined /> : <EyeInvisibleOutlined />} type={record.visible ? "primary": "default"} shape="circle"></Button>
+  },
+  {
+    title: 'Coordiantes',
+    dataIndex: 'coordinates',
+    key: 'coordinates',
+    render: (text, record) => (`${record.latitude}, ${record.longitude}`)
+  },
+  {
+    title: 'Options',
+    key: 'options',
+    align: 'center',
+    render: (text, record) => (<DeleteOutlined />)
+  }
+]
 
 const MarkersList = ({ markers }) => {
-console.log("MArkers", markers);
+
 return (
-    <table>
-      <thead>
-      <tr>
-        <th>Visibility</th>
-        <th>Label</th>
-        <th>Coordinates</th>
-        <th>Options</th>
-      </tr>
-      </thead>
-      <tbody>
-        {
-          (markers || []).map((m,i) => (
-            <tr key={i}>
-            <td>1</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>) )
-        }
-      </tbody>
-    </table>
+  <Table columns={columns} dataSource={markers} pagination={null}  footer={null}/>
   )
 }
 
