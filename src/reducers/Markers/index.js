@@ -5,15 +5,18 @@ const MarkersSlice = createSlice({
   initialState: [],
   reducers: {
     addMarker(state, action) {
-      console.log("addMarker()", state, action);
       state.push(action.payload);
-      console.log("reducer", state);
     },
     removeMarker(state, action) {
-      return state.filter(o => o.marker.id)
+      const { payload: { id } } = action;
+      return state.filter(o => o.id !== id )
     },
-    hideMaker(state, action) {
-
+    toggleMakerVisible(state, action) {
+      const { payload: { id } } = action;
+      const markerIndex = state.findIndex(o => o.id === id);
+      if (markerIndex >= 0) {
+         state[markerIndex].visible = !(state[markerIndex].visible);
+      }
     },
     updateMarker(state, action) {
 
@@ -23,6 +26,6 @@ const MarkersSlice = createSlice({
 })
 
 
-export const { addMarker, removeMarker, hideMaker, updateMarker } = MarkersSlice.actions;
+export const { addMarker, removeMarker, toggleMakerVisible, updateMarker } = MarkersSlice.actions;
 
 export default MarkersSlice.reducer;
