@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  menuOpen: false,
+  menuOpen: true,
 };
 const AppSlice = createSlice({
   name: "markers",

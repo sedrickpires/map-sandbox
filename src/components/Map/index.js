@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import { Button } from 'antd';
-import { MenuOutlined } from '@ant-design/icons';
+import { MenuFoldOutlined } from '@ant-design/icons';
 import { connect } from 'react-redux';
 import { toggleMenu } from '../../reducers/App';
 
@@ -9,7 +9,7 @@ import { toggleMenu } from '../../reducers/App';
 const MenuControl = ({ clickHandler }) => {
   return <div className="leaflet-top leaflet-right">
       <div className="leaflet-control leaflet-bar menu-control">
-        <Button shape="circle" size="large" icon={<MenuOutlined />} onClick={clickHandler}></Button>
+        <Button  size="large" icon={<MenuFoldOutlined />} onClick={clickHandler} type="primary"></Button>
       </div>
   </div>
 }

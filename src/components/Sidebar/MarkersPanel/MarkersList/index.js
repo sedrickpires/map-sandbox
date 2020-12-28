@@ -43,7 +43,7 @@ const getColumns = () => (
 )  
 
 return (
-  <Table columns={getColumns()} dataSource={markers} pagination={null}  footer={null}/>
+  <Table columns={getColumns()} dataSource={markers} pagination={false}  footer={null} size={'small'} bordered/>
   )
 }
 
