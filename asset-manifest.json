@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/map-sandbox/static/css/main.3cbc8de3.chunk.css",
+    "main.js": "/map-sandbox/static/js/main.9c48d03b.chunk.js",
+    "main.js.map": "/map-sandbox/static/js/main.9c48d03b.chunk.js.map",
+    "runtime-main.js": "/map-sandbox/static/js/runtime-main.bc46b531.js",
+    "runtime-main.js.map": "/map-sandbox/static/js/runtime-main.bc46b531.js.map",
+    "static/css/2.ea9b1cc9.chunk.css": "/map-sandbox/static/css/2.ea9b1cc9.chunk.css",
+    "static/js/2.2cacbb1f.chunk.js": "/map-sandbox/static/js/2.2cacbb1f.chunk.js",
+    "static/js/2.2cacbb1f.chunk.js.map": "/map-sandbox/static/js/2.2cacbb1f.chunk.js.map",
+    "static/js/3.311bdb6c.chunk.js": "/map-sandbox/static/js/3.311bdb6c.chunk.js",
+    "static/js/3.311bdb6c.chunk.js.map": "/map-sandbox/static/js/3.311bdb6c.chunk.js.map",
+    "index.html": "/map-sandbox/index.html",
+    "static/css/2.ea9b1cc9.chunk.css.map": "/map-sandbox/static/css/2.ea9b1cc9.chunk.css.map",
+    "static/css/main.3cbc8de3.chunk.css.map": "/map-sandbox/static/css/main.3cbc8de3.chunk.css.map",
+    "static/js/2.2cacbb1f.chunk.js.LICENSE.txt": "/map-sandbox/static/js/2.2cacbb1f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc46b531.js",
+    "static/css/2.ea9b1cc9.chunk.css",
+    "static/js/2.2cacbb1f.chunk.js",
+    "static/css/main.3cbc8de3.chunk.css",
+    "static/js/main.9c48d03b.chunk.js"
+  ]
+}
